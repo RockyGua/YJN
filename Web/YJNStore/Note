@@ -1,0 +1,24 @@
+1.集成asset-pipeline启动报错：
+	2015-09-16 11:22:12,950 [localhost-startStop-1] ERROR resource.ResourceProcessor  - Unable to load resources
+	Message: No signature of method: asset.pipeline.grails.CachingLinkGenerator.handleAbsolute() is applicable for argument types: (java.util.LinkedHashMap) values: [[plugin:jquery, dir:js/jquery, file:jquery-1.8.3.min.js, ...]]
+
+	解决方法：添加<asset:deferredScripts/>
+
+2.grails layout
+	http://grails.asia/grails-tutorial-for-beginners-layout-templates/
+	http://mrhaki.blogspot.com/2011/03/grails-goodness-applying-layouts-in.html
+
+3.Spring security
+	http://grails.asia/grails-spring-security-core-plugin-example-dynamic-request-maps
+	http://blog.csdn.net/a__java___a/article/details/7931507
+
+	$ mysql -u root -p
+	Enter password: ********
+	Welcome to the MySQL monitor. Commands end with ; or \g.
+	...
+	mysql> create database racetrack_dev;
+	...
+	mysql> grant all on racetrack_dev.* to grails@localhost identified by 'server';
+
+	$ mysql --user=grails -p --database=racetrack_dev
+
