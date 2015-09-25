@@ -8,6 +8,10 @@
 //= require jquery
 //= require_tree .
 //= require_self
+//= require plugins-minified/jquery-2.1.4.js
+//= require plugins-minified/angular.min.js
+//= require plugins-minified/angular-route.min.js
+//= require_tree application
 
 if (typeof jQuery !== 'undefined') {
 	(function($) {
