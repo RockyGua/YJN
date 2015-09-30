@@ -7,6 +7,7 @@ class UrlMappings {
             }
         }
 
+        "/template/healthCheck"(view:"/demo")
         "/"(view:"/index")
         "500"(view:'/error')
 	}

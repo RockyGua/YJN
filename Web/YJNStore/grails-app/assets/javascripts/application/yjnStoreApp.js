@@ -10,19 +10,15 @@ try {
 var yjnStoreAppModule = angular.module("yjnStoreApp", ["ngRoute", "healthCheckControllers"]);
 yjnStoreAppModule.constant("module", {});
 yjnStoreAppModule.config(function ($routeProvider, $locationProvider) {
-    //$routeProvider.
-    //    when("/", {
-    //        templateUrl: '/racetrack/template/healthCheck',
-    //        controller: 'HealthCheckCtrl'
-    //    }).
-    //    when("/api", {
-    //        templateUrl: '/racetrack/template/api/version',
-    //        controller: 'HealthCheckCtrl'
-    //    });
-    //
-    //$locationProvider.html5Mode(true);
+    $routeProvider.
+        when("/", {
+            templateUrl: '/YJNStore/template/healthCheck',
+            controller: 'HealthCheckCtrl'
+        });
+
+    $locationProvider.html5Mode(true);
 
 });
-//raceTrackAppModule.run(function($rootScope) {
+//yjnStoreAppModule.run(function($rootScope) {
 //        alert("sdadadadadad");
 //    });
