@@ -12,7 +12,11 @@ yjnStoreAppModule.constant("module", {});
 yjnStoreAppModule.config(function ($routeProvider, $locationProvider) {
     $routeProvider.
         when("/", {
-            templateUrl: '/YJNStore/template/healthCheck',
+            templateUrl: '/YJNStore/template/blog',
+            controller: 'HealthCheckCtrl'
+        }).
+        when("/dashboard", {
+            templateUrl: '/YJNStore/template/dashboard',
             controller: 'HealthCheckCtrl'
         });
 

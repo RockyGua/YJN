@@ -6,9 +6,9 @@
 // to create separate JavaScript files as needed.
 //
 //= require jquery
-//= require plugins-minified/jquery-2.1.4.js
 //= require plugins-minified/angular.min.js
 //= require plugins-minified/angular-route.min.js
+//= require_tree plugins-minified
 //= require_tree application
 //= require_self
 

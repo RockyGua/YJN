@@ -4,5 +4,5 @@
 angular.module("healthCheckControllers", []).
     controller("HealthCheckCtrl", ["$scope", "$timeout", "$location",
         function ($scope, $timeout, $location) {
-            $scope.testArea = "testArea";
+
         }]);

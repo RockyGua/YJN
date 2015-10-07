@@ -7,8 +7,10 @@ class UrlMappings {
             }
         }
 
-        "/template/healthCheck"(view:"/demo")
+        "/template/blog"(view:"/blog")
+        "/template/dashboard"(view:"/dashboard")
         "/"(view:"/index")
+        "/dashboard"(view:"/index")
         "500"(view:'/error')
 	}
 }
